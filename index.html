@@ -1,86 +1,119 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Tiny Spring</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<?xml version="1.0" encoding="UTF-8" ?>
 
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="js/google-code-prettify/prettify.css" rel="stylesheet">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Tiny Spring</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta charset="utf-8" />
+<link rel="icon" type="image/png" href="/resources/img/favicon.png" />
 
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+<!--[if lt IE 9]>
+   <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+ <![endif]-->
 
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="ico/favicon.ico">
 
-  </head>
+<link rel="stylesheet" href="./css/bootstrap.min.css" />
+<link rel="stylesheet" href="./css/bootstrap-responsive.css" />
+<link rel="stylesheet" href="./css/docs.css" />
+<link rel="stylesheet" href="./css/tinyspring.css" />
 
-  <body>
-  
-    
-    <div class="container">
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script	src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 
-    <div class="navbar">
-    <div class="navbar-inner">
-    <div class="container">
-      <a class="brand" href="#">Tiny Spring</a>
-      <p class="navbar-text"></p>
+</head>
+<body data-spy="scroll" data-target=".subnav" data-offset="50">
+
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+
+			<div class="container">
+				<a data-target=".nav-collapse" data-toggle="collapse"
+					class="btn btn-navbar"> <span class="icon-bar"></span> <span
+					class="icon-bar"></span> <span class="icon-bar"></span>
+				</a>
+				<a href="/" class="brand">Tiny Spring</a>
+				<div class="nav-collapse">
+
+					<ul class="nav">
+
+						<li><a href="/news/">News</a></li>
+						<li class="dropdown"><a href="#" data-toggle="dropdown"	class="dropdown-toggle">Download <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="/download/android/">Android</a></li>
+							</ul>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+
+<div class="hero-unit alert alert-info">
+	<h1>Welcome to Tiny Spring project</h1>
+  <p id="tagline">The minimalistic dependency injection framework based on Spring</a></p>
+</div>
+
+  <!-- Headings & Paragraph Copy -->
+  <div class="row">
+	  
+    <div class="span4">
+      <div class="well">
+      <h3>Why you should use it?</h3>
+      <p>Maybe you just hate including 1MB+ of Spring jars to get simple DI working with your 10KBs of code?</p>
+      <p>Or you don't like the way how is your Android project tightly coupled to Roboguice?</p>
+      <p>Or you hate your Spring MVC app start up time on GAE?</p>
     </div>
     </div>
+
+    <div class="span4">
+      <div class="well">
+        <h3>Features</h3>
+        <ul>
+          <li>small foot print
+          <li>XML configuration (yes it's a feature)
+          <li>modular (Android & Web modules)
+          <li>simple
+          <li>opensource
+        </ul>
+
+      </div>
     </div>
-    
-    <div class="hero-unit">
-      <h1>Tiny Spring</h1>
-      <p>A light-weight Spring container</p>
-      <p>
-        <a class="btn btn-primary btn-large">Tiny Spring</a>
-        <a class="btn btn-primary btn-large">Tiny Spring Android</a>
-      </p>
+	  
+    <div class="span4">
+      <div class="well">
+		<h3>Download & Participate</h3>
+		<p>The source is available on Github - your help and comments are really welcome!</p>
+		<ul>
+		  <li><a href="https://github.com/tinyspring/tinyspring" target="_blank">Tiny Spring</a>
+		  <li><a href="https://github.com/tinyspring/tinyspring-android" target="_blank">Tine Spring Android</a>
+		</ul>
     </div>
-    
     </div>
-    
-    
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-    <script src="js/jquery.js"></script>
-    <script src="js/google-code-prettify/prettify.js"></script>
-    <script src="js/bootstrap-transition.js"></script>
-    <script src="js/bootstrap-alert.js"></script>
 
-    <script src="js/bootstrap-modal.js"></script>
-    <script src="js/bootstrap-dropdown.js"></script>
-    <script src="js/bootstrap-scrollspy.js"></script>
-    <script src="js/bootstrap-tab.js"></script>
-    <script src="js/bootstrap-tooltip.js"></script>
-    <script src="js/bootstrap-popover.js"></script>
+  </div>
 
-    <script src="js/bootstrap-button.js"></script>
-    <script src="js/bootstrap-collapse.js"></script>
-    <script src="js/bootstrap-carousel.js"></script>
-    <script src="js/bootstrap-typeahead.js"></script>
-    <script src="js/application.js"></script>
+</div>
 
-    <script>
-      <!--
-      var _gauges = _gauges || [];
-      (function() {
-        var t   = document.createElement('script');
-        t.type  = 'text/javascript';
-        t.async = true;
-        t.id    = 'gauges-tracker';
-        t.setAttribute('data-site-id', '4f0dc9fef5a1f55508000013');
-        t.src = '//secure.gaug.es/track.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(t, s);
-      })();-->
-    </script>
+    <script src="/resources/js/jquery-1.7.1.min.js"></script>
+    <script src="/resources/js/bootstrap-transition.js"></script>
+    <script src="/resources/js/bootstrap-alert.js"></script>
+    <script src="/resources/js/bootstrap-modal.js"></script>
+    <script src="/resources/js/bootstrap-dropdown.js"></script>
+    <script src="/resources/js/bootstrap-scrollspy.js"></script>
 
-  </body>
+    <script src="/resources/js/bootstrap-tab.js"></script>
+    <script src="/resources/js/bootstrap-tooltip.js"></script>
+    <script src="/resources/js/bootstrap-popover.js"></script>
+    <script src="/resources/js/bootstrap-button.js"></script>
+    <script src="/resources/js/bootstrap-collapse.js"></script>
+    <script src="/resources/js/bootstrap-carousel.js"></script>
+
+    <script src="/resources/js/bootstrap-typeahead.js"></script>
+
+</body>
 </html>
